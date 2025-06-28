@@ -37,6 +37,8 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import gazebo from './gazebo.png';
 import quartus from './Quartus_prime_icon.png';
+import keil from './keil.png';
+
 
 
 export const assets = {
@@ -78,7 +80,8 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     gazebo,
-    quartus
+    quartus,
+    keil
 };
 
 export const workData = [
@@ -119,5 +122,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus 
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil
 ];
