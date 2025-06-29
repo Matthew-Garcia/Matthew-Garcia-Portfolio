@@ -39,6 +39,7 @@ import gazebo from './gazebo.png';
 import quartus from './Quartus_prime_icon.png';
 import keil from './keil.png';
 import arduino from './arduino.png';
+import ros2 from './ros2.png';
 
 
 
@@ -85,6 +86,7 @@ export const assets = {
     quartus,
     keil,
     arduino,
+    ros2,
 };
 
 export const workData = [
@@ -125,5 +127,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2
 ];
