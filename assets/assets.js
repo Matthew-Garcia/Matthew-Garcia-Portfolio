@@ -41,7 +41,7 @@ import keil from './keil.png';
 import arduino from './arduino.png';
 import ros2 from './ros2.png';
 import solidworks from './solidworks.png';
-import vivado from './vivado-logo-transparent.png';
+import vivado from './vivado.png';
 
 
 
