@@ -41,6 +41,7 @@ import keil from './keil.png';
 import arduino from './arduino.png';
 import ros2 from './ros2.png';
 import solidworks from './solidworks.png';
+import vivado from './vivado-logo-transparent.png';
 
 
 
@@ -89,6 +90,7 @@ export const assets = {
     arduino,
     ros2,
     solidworks,
+    vivado,
 };
 
 export const workData = [
@@ -129,7 +131,7 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks, assets.vivado,
 ];
 
 
