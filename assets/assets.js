@@ -129,5 +129,60 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks
+  {
+    icon: assets.vscode,
+    name: "VS Code",
+    link: "https://code.visualstudio.com/docs"
+  },
+  {
+    icon: assets.firebase,
+    name: "Firebase",
+    link: "https://firebase.google.com/docs"
+  },
+  {
+    icon: assets.mongodb,
+    name: "MongoDB",
+    link: "https://www.mongodb.com/docs/"
+  },
+  {
+    icon: assets.figma,
+    name: "Figma",
+    link: "https://help.figma.com/hc/en-us"
+  },
+  {
+    icon: assets.git,
+    name: "Git",
+    link: "https://git-scm.com/doc"
+  },
+  {
+    icon: assets.gazebo,
+    name: "Gazebo",
+    link: "https://gazebosim.org/docs"
+  },
+  {
+    icon: assets.quartus,
+    name: "Intel Quartus",
+    link: "https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/download.html"
+  },
+  {
+    icon: assets.keil,
+    name: "Keil µVision",
+    link: "https://developer.arm.com/documentation/100748/0616"
+  },
+  {
+    icon: assets.arduino,
+    name: "Arduino IDE",
+    link: "https://docs.arduino.cc/software/ide-v2/"
+  },
+  {
+    icon: assets.ros2,
+    name: "ROS2",
+    link: "https://docs.ros.org/en/foxy/index.html"
+  },
+  {
+    icon: assets.solidworks,
+    name: "SolidWorks",
+    link: "https://help.solidworks.com/"
+  }
 ];
+
