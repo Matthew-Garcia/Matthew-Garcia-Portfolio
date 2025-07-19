@@ -41,7 +41,7 @@ export default function Smart_IoT_Pet_Feeder_Page() {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold mb-4"
         >
-          SCARA Robot Arm
+           Smart IoT Pet Feeder
         </motion.h1>
 
         <motion.p
