@@ -85,6 +85,17 @@ const Work = ({ isDarkMode }) => {
         ))}
       </motion.div>
 
+      {project.title === "Smart IoT Pet Feeder" && (
+        <a
+          href="https://github.com/Matthew-Garcia/Smart-IoT-Pet-Feeder"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
+        >
+          View on GitHub →
+        </a>
+      )}
+
       <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
