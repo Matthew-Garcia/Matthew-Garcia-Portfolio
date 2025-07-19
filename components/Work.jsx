@@ -84,12 +84,12 @@ const Work = ({ isDarkMode }) => {
 
 {project.title === "Smart IoT Pet Feeder" && (
   <a
-    href="https://github.com/Matthew-Garcia/Smart-IoT-Pet-Feeder"
+    href="https://matthew-garcia-portfolio2.vercel.app/projects/smart_iot_pet_feeder"
     target="_blank"
     rel="noopener noreferrer"
     className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
   >
-    View on GitHub →
+    View Smart IoT Pet Feeder →
   </a>
 )}
 
