@@ -75,27 +75,29 @@ export default function Smart_IoT_Pet_Feeder_Page() {
               className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
             >
               <h2 className="text-xl font-semibold mb-2">
-                Arduino-Controlled SCARA Robot in Action
+                Smart IoT Pet Feeder in Action
               </h2>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
                 <li>
-                  Interfaced with a custom-built control interface developed in
-                  Processing.
+                  Connects over Wi-Fi to a mobile app for on-demand or scheduled feedings.
                 </li>
                 <li>
-                  Utilizes an Arduino microcontroller for precise motion with
-                  forward and inverse kinematics.
+                  Precise portion control using a motor-driven auger/dispenser and calibrated timing.
                 </li>
                 <li>
-                  Accepts joint parameters or Cartesian coordinates as input.
+                  Live status & logs: view last dispense time, upcoming schedule, and manual override.
                 </li>
                 <li>
-                  Provides real-time feedback and control over gripper
-                  actuation.
+                  Alerts & failsafes for jams, low food, or missed cycles (app notifications).
                 </li>
                 <li>
-                  Integrates embedded systems, mechanical design, and
-                  user-centered software engineering.
+                  Modular, 3D-printed design for easy cleaning and part replacement.
+                </li>
+                 <li>
+                  Secure firmware with OTA updates and MQTT/HTTP API hooks for home-automation integration.
+                </li>
+                 <li>
+                  Built as a full stack: embedded firmware, CAD for printed parts, and user-centered app UX.
                 </li>
               </ul>
             </motion.div>
