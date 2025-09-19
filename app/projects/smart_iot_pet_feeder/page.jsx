@@ -50,10 +50,7 @@ export default function Smart_IoT_Pet_Feeder_Page() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg text-gray-700 dark:text-gray-300 mb-6"
         >
-          This project features a custom-built SCARA (Selective Compliance
-          Articulated Robot Arm) designed for precision pick-and-place tasks.
-          The system combines mechanical engineering, embedded programming, and
-          control theory into a single cohesive robotic platform.
+          A modern, 3D-printed automatic pet feeder designed for remote feeding via smartphone. Built using Wi-Fi-enabled microcontrollers and efficient 3D-printed parts, this feeder dispenses food on a customizable schedule or on demand using a mobile app.
         </motion.p>
 
         <div className="space-y-12">
