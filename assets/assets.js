@@ -103,7 +103,7 @@ export const workData = [
     {
         title: 'Smart IoT Pet Feeder',
         description: 'IoT & Mobile App Integration',
-        bgImage: '/work-2.png',
+        bgImage: '/Smart_Bowl.png',
     },
     {
         title: '64-Bit ALU Design (VHDL)',
@@ -133,5 +133,6 @@ export const infoList = [
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks, assets.vivado
 ];
+
 
 
