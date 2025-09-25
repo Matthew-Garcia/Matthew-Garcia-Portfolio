@@ -63,8 +63,8 @@ export default function Smart_IoT_Pet_Feeder_Page() {
               className="w-full md:w-1/2"
             >
               <img
-                src="/SCARA-Robot-Arm.png"
-                alt="SCARA Robot Render"
+                src="/Smart_Bowl.png"
+                alt="Smart Bowl System"
                 className="w-full rounded-lg shadow-md object-cover"
               />
             </motion.div>
