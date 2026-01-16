@@ -151,7 +151,137 @@ export default function NasaLunaboticsPage() {
             </motion.div>
           </div>
 
-          {/* ROS 2 / Autonomy Snapshot */}
+                   {/* ROS 2 / Autonomy Snapshot */}
           <div className="flex flex-col md:flex-row gap-6 items-center">
             <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="w-full md:w-1/2"
+            >
+              <img
+                src="/Lunabotics-ROS2.jpg"
+                alt="ROS 2 Integration"
+                className="w-full rounded-lg shadow-md object-cover"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
+            >
+              <h2 className="text-xl font-semibold mb-2">ROS 2 Integration</h2>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+                <li>
+                  ROS 2 used for higher-level autonomy and navigation workflows.
+                </li>
+                <li>
+                  Clean command pathway supports mapping control inputs into rover
+                  motion.
+                </li>
+                <li>
+                  System designed to expand toward full autonomy over time.
+                </li>
+                <li>
+                  Debugging focused on repeatable motion + stable power delivery.
+                </li>
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Tools Used */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
+        >
+          <h2 className="text-xl font-semibold mb-2">Tools Used</h2>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            <li>
+              <strong>Embedded:</strong> ESP32-WROOM, ESP32-S3, MicroPython
+            </li>
+            <li>
+              <strong>Comms:</strong> WebSocket control (microdot +
+              microdot.websocket), Wi-Fi networking
+            </li>
+            <li>
+              <strong>Robotics:</strong> Differential drive, v/w command model
+            </li>
+            <li>
+              <strong>Software:</strong> ROS 2, Linux
+            </li>
+            <li>
+              <strong>Testing:</strong> Power + drivetrain debugging during field
+              testing
+            </li>
+          </ul>
+        </motion.div>
+
+        {/* Purpose */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
+        >
+          <h2 className="text-xl font-semibold mb-2">Purpose</h2>
+          <p className="text-gray-700 dark:text-gray-300">
+            Contribute to a competition-ready rover platform by delivering a
+            reliable embedded control stack, safe startup behavior, and a clean
+            interface for higher-level robotics software.
+          </p>
+        </motion.div>
+
+        {/* Results */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
+        >
+          <h2 className="text-xl font-semibold mb-2">Results</h2>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            <li>Stable remote driving using v/w velocity commands.</li>
+            <li>Safety boot behavior prevents accidental movement at startup.</li>
+            <li>Improved repeatability during drivetrain testing.</li>
+            <li>Foundation created for future autonomy integration.</li>
+          </ul>
+        </motion.div>
+
+        {/* Future Work */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
+        >
+          <h2 className="text-xl font-semibold mb-2">Future Work</h2>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            <li>Sensor integration for autonomy (encoders / IMU / LiDAR).</li>
+            <li>ROS 2 navigation improvements and better state estimation.</li>
+            <li>More robust power distribution and load testing.</li>
+          </ul>
+        </motion.div>
+
+        <motion.a
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          href="https://github.com/uhcl-lunar-hawks/uhcl-lunar-hawks-lunabotics"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-4 px-6 py-3 bg-black text-white rounded hover:bg-gray-800"
+        >
+          View on GitHub →
+        </motion.a>
+      </main>
+
+      <Footer isDarkMode={isDarkMode} />
+    </>
+  );
+}
 
