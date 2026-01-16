@@ -42,7 +42,7 @@ import arduino from './arduino.png';
 import ros2 from './ros2.png';
 import solidworks from './solidworks.png';
 import vivado from './vivado.png';
-import lunabotics from "./lunabotics.png";
+import lunabotics_rover from "./lunabotics-rover.png";
 
 
 
@@ -92,16 +92,16 @@ export const assets = {
     ros2,
     solidworks,
     vivado,
-    lunabotics,
+    lunabotics_rover,
 };
 
 export const workData = [
     
     {
-  title: "NASA Lunabotics Autonomous Rover",
-  description: "Embedded Systems, ROS 2, Autonomous Robotics",
-  img: assets.lunabotics,
-  link: "/projects/nasa-lunabotics",
+      title: "NASA Lunabotics Autonomous Rover",
+      description: "Embedded Systems, ROS 2, Autonomous Robotics",
+      bgImage: '/lunabotics_rover',
+      link: "/projects/nasa-lunabotics",
     },
     {
         title: 'SCARA Robot Arm',
@@ -138,6 +138,7 @@ export const infoList = [
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks, assets.vivado
 ];
+
 
 
 
