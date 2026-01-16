@@ -93,6 +93,18 @@ const Work = ({ isDarkMode }) => {
   </a>
 )}
 
+{project.title === "NASA Lunabotics Autonomous Rover" && (
+  <a
+    href="https://matthew-garcia-portfolio2.vercel.app/projects/nasa-lunabotics"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
+  >
+    View NASA Lunabotics →
+  </a>
+)}
+
+
           </div>
         ))}
       </motion.div>
@@ -118,3 +130,4 @@ const Work = ({ isDarkMode }) => {
 };
 
 export default Work;
+
