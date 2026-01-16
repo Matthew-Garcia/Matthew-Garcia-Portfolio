@@ -92,7 +92,7 @@ export const assets = {
     ros2,
     solidworks,
     vivado,
-    lunabotics_rover,
+    lunabotics,
 };
 
 export const workData = [
@@ -138,6 +138,7 @@ export const infoList = [
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks, assets.vivado
 ];
+
 
 
 
