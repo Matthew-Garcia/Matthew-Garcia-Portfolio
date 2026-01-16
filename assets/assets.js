@@ -94,6 +94,13 @@ export const assets = {
 };
 
 export const workData = [
+    
+   {
+    title: 'NASA Lunabotics Autonomous Rover',
+    description: 'Embedded Systems, ROS2, micro-ROS, Robotics',
+    bgImage: '/lunabotics-rover.png',
+    link: 'https://github.com/Matthew-Garcia/uhcl-lunar-hawks-lunabotics'
+    },
     {
         title: 'SCARA Robot Arm',
         description: 'Embedded Systems & Robotics',
@@ -105,11 +112,7 @@ export const workData = [
         description: 'IoT & Mobile App Integration',
         bgImage: '/Smart_Bowl.png',
     },
-    {
-        title: '64-Bit ALU Design (VHDL)',
-        description: 'Digital Design & FPGA',
-        bgImage: '/work-3.png',
-    },
+    
     {
         title: 'LiDAR-Based Mobile Robot',
         description: 'Autonomous Navigation with ROS2',
@@ -133,6 +136,7 @@ export const infoList = [
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks, assets.vivado
 ];
+
 
 
 
