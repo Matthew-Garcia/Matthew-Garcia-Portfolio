@@ -271,7 +271,7 @@ export default function NasaLunaboticsPage() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          href="https://github.com/uhcl-lunar-hawks/uhcl-lunar-hawks-lunabotics"
+          href="https://github.com/Matthew-Garcia/uhcl-lunar-hawks-lunabotics"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block mt-4 px-6 py-3 bg-black text-white rounded hover:bg-gray-800"
