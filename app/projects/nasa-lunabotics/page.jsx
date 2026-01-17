@@ -108,7 +108,7 @@ export default function NasaLunaboticsPage() {
           </div>
 
           {/* Rover Moving Demo */}
-          <div className="flex flex-col items-center gap-3">
+          <div className="flex flex-col items-center gap-2">
             <motion.h2
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -127,10 +127,10 @@ export default function NasaLunaboticsPage() {
               loop
               muted
               playsInline
-              className="w-full max-w-xl aspect-video rounded-lg shadow-md object-cover"
+              className="w-full max-w-2xl aspect-video rounded-lg shadow-md object-contain"
             />
 
-            <p className="text-center text-sm text-gray-600 dark:text-gray-400 max-w-xl">
+            <p className="text-center text-sm text-gray-600 dark:text-gray-400 max-w-2xl">
               Continuous driving demo during field testing.
             </p>
           </div>
