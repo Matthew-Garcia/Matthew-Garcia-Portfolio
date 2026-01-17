@@ -116,19 +116,45 @@ export default function NasaLunaboticsPage() {
               transition={{ duration: 0.5 }}
               className="md:col-span-2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
             >
-              <h2 className="text-xl font-semibold mb-2">Rover Moving Demo</h2>
+              <h2 className="text-xl font-semibold mb-3">Rover Moving Demo</h2>
 
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Continuous driving demo during field testing, showcasing stable
-                motion control and predictable handling.
+                This video demonstrates the Lunabotics rover executing
+                controlled motion during field testing using a velocity-based
+                drive model. The rover is driven through a custom embedded
+                control stack that translates high-level motion commands into
+                low-level motor actuation.
+              </p>
+
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                An ESP32 microcontroller (WROOM / S3) runs MicroPython and acts
+                as the primary drive controller. Commands are sent wirelessly
+                from a host system over a WebSocket connection, allowing
+                real-time control and tuning during testing.
               </p>
 
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
                 <li>
-                  Consistent throttle response with v/w velocity commands.
+                  <strong>Velocity Command Model:</strong> The controller
+                  accepts linear velocity (<code>v</code>) and angular velocity
+                  (<code>w</code>) inputs, which are converted into left and
+                  right wheel speed commands.
                 </li>
-                <li>Smooth turns and controlled acceleration.</li>
-                <li>Reliable behavior during repeated test runs.</li>
+                <li>
+                  <strong>Differential Drive Mapping:</strong> Wheel speeds are
+                  computed using the rover track width and scaled into PWM
+                  outputs for the motor drivers.
+                </li>
+                <li>
+                  <strong>Embedded Safety:</strong> On startup and communication
+                  loss, all motor control pins are forced LOW to prevent
+                  unintended motion.
+                </li>
+                <li>
+                  <strong>Controller Input:</strong> Motion commands are issued
+                  via a handheld controller interface, enabling smooth throttle
+                  response and predictable turning behavior.
+                </li>
               </ul>
             </motion.div>
 
