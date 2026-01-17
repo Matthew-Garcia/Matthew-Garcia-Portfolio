@@ -83,12 +83,13 @@ export default function NasaLunaboticsPage() {
               </h2>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
                 <li>
-                  Implemented MicroPython control on ESP32 (WROOM / S3) for rover
-                  drive control.
+                  Implemented MicroPython control on ESP32 (WROOM / S3) for
+                  rover drive control.
                 </li>
                 <li>
-                  WebSocket-based control interface that accepts <strong>v</strong>{" "}
-                  (linear) and <strong>w</strong> (angular) commands.
+                  WebSocket-based control interface that accepts{" "}
+                  <strong>v</strong> (linear) and <strong>w</strong> (angular)
+                  commands.
                 </li>
                 <li>
                   Differential drive conversion to left/right wheel commands and
@@ -106,48 +107,38 @@ export default function NasaLunaboticsPage() {
             </motion.div>
           </div>
 
-          {/* Control / Demo */}
-          <div className="flex flex-col md:flex-row gap-6 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+          {/* Control / Demo (Centered) */}
+          <div className="flex flex-col items-center gap-6">
+            <motion.video
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="w-full md:w-1/2"
-            >
-           <video
-            src="/lunabotics-control.webm"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full rounded-lg shadow-md object-cover"
-          />
-
-            </motion.div>
+              src="/lunabotics-control.webm"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="w-full max-w-5xl rounded-xl shadow-lg object-cover"
+            />
 
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md max-w-3xl w-full"
             >
-              <h2 className="text-xl font-semibold mb-2">
+              <h2 className="text-xl font-semibold mb-2 text-center">
                 Differential Drive with v / w Commands
               </h2>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
                 <li>
-                  Converts linear/angular velocity into left/right wheel speed
+                  Converts linear/angular velocity into left/right wheel
                   commands.
                 </li>
-                <li>
-                  PWM output (high frequency) to drive motor controllers.
-                </li>
-                <li>
-                  Safe-stop logic when connection drops or commands timeout.
-                </li>
-                <li>
-                  Tunable constants for turn strength and track width.
-                </li>
+                <li>PWM output (high frequency) to drive motor controllers.</li>
+                <li>Safe-stop logic on disconnect or command timeout.</li>
+                <li>Tunable constants for turn strength and track width.</li>
                 <li>
                   Designed for reliable driving during repeated field testing.
                 </li>
@@ -155,7 +146,7 @@ export default function NasaLunaboticsPage() {
             </motion.div>
           </div>
 
-                   {/* ROS 2 / Autonomy Snapshot */}
+          {/* ROS 2 / Autonomy Snapshot */}
           <div className="flex flex-col md:flex-row gap-6 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -182,14 +173,15 @@ export default function NasaLunaboticsPage() {
                   ROS 2 used for higher-level autonomy and navigation workflows.
                 </li>
                 <li>
-                  Clean command pathway supports mapping control inputs into rover
-                  motion.
+                  Clean command pathway supports mapping control inputs into
+                  rover motion.
                 </li>
                 <li>
                   System designed to expand toward full autonomy over time.
                 </li>
                 <li>
-                  Debugging focused on repeatable motion + stable power delivery.
+                  Debugging focused on repeatable motion + stable power
+                  delivery.
                 </li>
               </ul>
             </motion.div>
@@ -219,8 +211,8 @@ export default function NasaLunaboticsPage() {
               <strong>Software:</strong> ROS 2, Linux
             </li>
             <li>
-              <strong>Testing:</strong> Power + drivetrain debugging during field
-              testing
+              <strong>Testing:</strong> Power + drivetrain debugging during
+              field testing
             </li>
           </ul>
         </motion.div>
@@ -250,7 +242,9 @@ export default function NasaLunaboticsPage() {
           <h2 className="text-xl font-semibold mb-2">Results</h2>
           <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             <li>Stable remote driving using v/w velocity commands.</li>
-            <li>Safety boot behavior prevents accidental movement at startup.</li>
+            <li>
+              Safety boot behavior prevents accidental movement at startup.
+            </li>
             <li>Improved repeatability during drivetrain testing.</li>
             <li>Foundation created for future autonomy integration.</li>
           </ul>
@@ -288,4 +282,3 @@ export default function NasaLunaboticsPage() {
     </>
   );
 }
-
