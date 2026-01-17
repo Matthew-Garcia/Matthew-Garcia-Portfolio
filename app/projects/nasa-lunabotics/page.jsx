@@ -115,7 +115,7 @@ export default function NasaLunaboticsPage() {
               className="w-full md:w-1/2"
             >
               <img
-                src="/Lunabotics-Control.gif"
+                src="/lunabotics-control.webm"
                 alt="Lunabotics Control Demo"
                 className="w-full rounded-lg shadow-md object-cover"
               />
