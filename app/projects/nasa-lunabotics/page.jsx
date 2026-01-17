@@ -66,7 +66,7 @@ export default function NasaLunaboticsPage() {
               className="w-full md:w-1/2"
             >
               <img
-                src="/Lunabotics-Rover.png"
+                src="/lunabotics-Rover.png"
                 alt="NASA Lunabotics Rover"
                 className="w-full rounded-lg shadow-md object-cover"
               />
