@@ -107,32 +107,47 @@ export default function NasaLunaboticsPage() {
             </motion.div>
           </div>
 
-          {/* Rover Moving Demo */}
-          <div className="flex flex-col items-center gap-2">
-            <motion.h2
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
+          {/* Rover Moving Demo (Text Left / Video Right) */}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-start">
+            {/* Left: Text */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-xl font-semibold text-center"
+              className="md:col-span-2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
             >
-              Rover Moving Demo
-            </motion.h2>
+              <h2 className="text-xl font-semibold mb-2">Rover Moving Demo</h2>
 
-            <motion.video
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              src="/lunabotics-rover-moving.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full max-w-2xl aspect-video rounded-lg shadow-md object-contain"
-            />
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                Continuous driving demo during field testing, showcasing stable
+                motion control and predictable handling.
+              </p>
 
-            <p className="text-center text-sm text-gray-600 dark:text-gray-400 max-w-2xl">
-              Continuous driving demo during field testing.
-            </p>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+                <li>
+                  Consistent throttle response with v/w velocity commands.
+                </li>
+                <li>Smooth turns and controlled acceleration.</li>
+                <li>Reliable behavior during repeated test runs.</li>
+              </ul>
+            </motion.div>
+
+            {/* Right: Video */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="md:col-span-3 flex md:justify-end"
+            >
+              <video
+                src="/lunabotics-rover-moving.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full max-w-md md:max-w-lg rounded-lg shadow-md object-contain"
+              />
+            </motion.div>
           </div>
 
           {/* Control / Demo (Centered) */}
