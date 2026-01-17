@@ -127,7 +127,7 @@ export default function NasaLunaboticsPage() {
               loop
               muted
               playsInline
-              className="w-full max-w-3xl rounded-xl shadow-lg object-cover"
+              className="w-full max-w-1xl rounded-xl shadow-lg object-cover"
             />
 
             <p className="text-center text-gray-700 dark:text-gray-300 max-w-3xl">
