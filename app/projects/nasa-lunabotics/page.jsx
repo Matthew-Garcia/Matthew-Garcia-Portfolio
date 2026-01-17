@@ -114,11 +114,15 @@ export default function NasaLunaboticsPage() {
               transition={{ duration: 0.6 }}
               className="w-full md:w-1/2"
             >
-              <img
-                src="/lunabotics-control.webm"
-                alt="Lunabotics Control Demo"
-                className="w-full rounded-lg shadow-md object-cover"
-              />
+           <video
+            src="/lunabotics-control.webm"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full rounded-lg shadow-md object-cover"
+          />
+
             </motion.div>
 
             <motion.div
