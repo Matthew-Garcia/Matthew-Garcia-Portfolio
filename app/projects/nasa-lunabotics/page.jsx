@@ -107,6 +107,35 @@ export default function NasaLunaboticsPage() {
             </motion.div>
           </div>
 
+          {/* Rover Moving Demo (Continuous) */}
+          <div className="flex flex-col items-center gap-4">
+            <motion.h2
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-2xl font-semibold text-center"
+            >
+              Rover Moving Demo
+            </motion.h2>
+
+            <motion.video
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              src="/lunabotics-rover-moving.webm"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full max-w-5xl rounded-xl shadow-lg object-cover"
+            />
+
+            <p className="text-center text-gray-700 dark:text-gray-300 max-w-3xl">
+              Continuous driving demo showing stable motion control using linear
+              (v) and angular (w) velocity commands.
+            </p>
+          </div>
+
           {/* Control / Demo (Centered) */}
           <div className="flex flex-col items-center gap-6">
             <motion.video
