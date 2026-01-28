@@ -98,7 +98,7 @@ export const assets = {
 export const workData = [
     
     {
-      title: "NASA Lunabotics Autonomous Rover",
+      title: "NASA Lunabotics Rover",
       description: "Embedded Systems, ROS 2, Autonomous Robotics",
       bgImage: '/lunabotics-rover.png',
       link: "/projects/nasa-lunabotics",
@@ -138,6 +138,7 @@ export const infoList = [
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks, assets.vivado
 ];
+
 
 
 
