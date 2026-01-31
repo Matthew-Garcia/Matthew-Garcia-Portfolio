@@ -31,7 +31,7 @@ const Header = () => {
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-       I specialize in embedded systems, robotics, IT infrastructure, and artificial neural networks.
+       I specialize in embedded systems, robotics, and hardware–software integration.
         </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
@@ -56,3 +56,4 @@ const Header = () => {
 }
 
 export default Header
+
