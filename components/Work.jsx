@@ -37,9 +37,7 @@ const Work = ({ isDarkMode }) => {
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        Welcome to my portfolio! Here you’ll find projects in robotics, embedded
-        systems, IT, and digital design - real-world solutions built with
-        hands-on engineering.
+        Welcome to my portfolio. Here you’ll find selected projects in embedded systems and robotics, focused on real-world engineering problems and hands-on system development
       </motion.p>
 
       <motion.div
@@ -130,5 +128,6 @@ const Work = ({ isDarkMode }) => {
 };
 
 export default Work;
+
 
 
