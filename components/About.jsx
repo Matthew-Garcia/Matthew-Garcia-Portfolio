@@ -55,13 +55,12 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-Ovo">
-            I am a computer engineer with hands-on experience in embedded
-            systems, robotics, IT infrastructure, and artificial neural
-            networks. My background includes developing FPGA-based digital
-            systems, working with ROS2-driven robotic platforms, and supporting
-            enterprise-scale IT operations. I'm passionate about bridging
-            hardware and software to create real-world engineering solutions
-            that are both efficient and innovative.
+            I am a Computer Engineer with hands-on experience in embedded systems, 
+            robotics, and hardware–software integration. My background includes developing 
+            FPGA-based digital systems, building and testing ROS 2–driven robotic platforms, 
+            and working with embedded firmware, simulation, and system-level debugging. 
+            I focus on translating engineering theory into reliable, real-world systems 
+            through disciplined design and practical problem-solving.
           </p>
 
           <motion.ul
@@ -127,3 +126,4 @@ const About = ({ isDarkMode }) => {
 };
 
 export default About;
+
