@@ -132,12 +132,13 @@ export const serviceData = [
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'C/C++, Python, JavaScript, Verilog, VHDL, ARM Assembly, Bash, HTML/CSS, ROS2, SQL' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. in Computer Engineering (May 2026), A.S. in Pre-Engineering, A.A. in General Studies' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Developed 10+ projects in robotics, embedded systems, and IT solutions'  }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Developed 10+ projects in robotics, embedded systems, and hardware–software integration'  }
 ];
 
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks, assets.vivado
 ];
+
 
 
 
