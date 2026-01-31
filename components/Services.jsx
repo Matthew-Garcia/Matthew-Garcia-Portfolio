@@ -30,7 +30,7 @@ const Services = () => {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-       I design and develop embedded systems using microcontrollers, sensors, and real-time logic. My work includes building robotic platforms with ROS2, creating AI-enhanced applications using neural networks, and supporting IT infrastructure. I focus on delivering practical, efficient solutions that integrate both hardware and software.</motion.p>
+      I design and develop embedded systems using microcontrollers, sensors, and real-time logic. My work includes building robotic platforms with ROS 2, designing digital hardware with FPGA technologies, and developing firmware-driven systems that integrate hardware and software into reliable, real-world solutions.</motion.p>
 
         <motion.div
         initial={{ opacity: 0 }}
@@ -59,3 +59,4 @@ const Services = () => {
 }
 
 export default Services
+
