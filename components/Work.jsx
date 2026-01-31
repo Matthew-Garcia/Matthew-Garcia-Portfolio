@@ -73,7 +73,7 @@ const Work = ({ isDarkMode }) => {
 
             {project.title === "SCARA Robot Arm" && (
   <a
-    href="https://matthew-garcia-portfolio2.vercel.app/projects/scara-robot"
+    href="https://matthew-garcia-portfolio.vercel.app/projects/scara-robot"
     target="_blank"
     rel="noopener noreferrer"
     className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
@@ -84,7 +84,7 @@ const Work = ({ isDarkMode }) => {
 
 {project.title === "Smart IoT Pet Feeder" && (
   <a
-    href="https://matthew-garcia-portfolio2.vercel.app/projects/smart_iot_pet_feeder"
+    href="https://matthew-garcia-portfolio.vercel.app/projects/smart_iot_pet_feeder"
     target="_blank"
     rel="noopener noreferrer"
     className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
@@ -95,7 +95,7 @@ const Work = ({ isDarkMode }) => {
 
 {project.title === "NASA Lunabotics Autonomous Rover" && (
   <a
-    href="https://matthew-garcia-portfolio2.vercel.app/projects/nasa-lunabotics"
+    href="https://matthew-garcia-portfolio.vercel.app/projects/nasa-lunabotics"
     target="_blank"
     rel="noopener noreferrer"
     className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
@@ -130,4 +130,5 @@ const Work = ({ isDarkMode }) => {
 };
 
 export default Work;
+
 
