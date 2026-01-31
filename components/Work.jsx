@@ -1,5 +1,3 @@
-"use client";
-
 import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
@@ -39,9 +37,7 @@ const Work = ({ isDarkMode }) => {
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        Welcome to my portfolio. Here you’ll find selected projects in embedded
-        systems and robotics, focused on real-world engineering problems and
-        hands-on system development.
+        Welcome to my portfolio. Here you’ll find selected projects in embedded systems and robotics, focused on real-world engineering problems and hands-on system development
       </motion.p>
 
       <motion.div
@@ -52,29 +48,61 @@ const Work = ({ isDarkMode }) => {
       >
         {workData.map((project, index) => (
           <div key={index} className="flex flex-col items-center">
-            <Link href={project.link} className="w-full">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-                className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group w-full"
-                style={{ backgroundImage: `url(${project.bgImage})` }}
-                role="link"
-                aria-label={`Open ${project.title}`}
-              >
-                <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                  <div>
-                    <h2 className="font-semibold">{project.title}</h2>
-                    <p className="text-sm text-gray-700">
-                      {project.description}
-                    </p>
-                  </div>
-
-                  <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                    <Image src={assets.send_icon} alt="" className="w-5" />
-                  </div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group w-full"
+              style={{ backgroundImage: `url(${project.bgImage})` }}
+            >
+              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                  <h2 className="font-semibold">{project.title}</h2>
+                  <p className="text-sm text-gray-700">{project.description}</p>
                 </div>
-              </motion.div>
-            </Link>
+                <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                  <Image
+                    src={assets.send_icon}
+                    alt="send icon"
+                    className="w-5"
+                  />
+                </div>
+              </div>
+            </motion.div>
+
+            {project.title === "SCARA Robot Arm" && (
+  <a
+    href="https://matthew-garcia-portfolio.vercel.app/projects/scara-robot"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
+  >
+    View SCARA Robot →
+  </a>
+)}
+
+{project.title === "Smart IoT Pet Feeder" && (
+  <a
+    href="https://matthew-garcia-portfolio.vercel.app/projects/smart_iot_pet_feeder"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
+  >
+    View Smart IoT Pet Feeder →
+  </a>
+)}
+
+{project.title === "NASA Lunabotics Autonomous Rover" && (
+  <a
+    href="https://matthew-garcia-portfolio.vercel.app/projects/nasa-lunabotics"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
+  >
+    View NASA Lunabotics →
+  </a>
+)}
+
+
           </div>
         ))}
       </motion.div>
@@ -88,7 +116,9 @@ const Work = ({ isDarkMode }) => {
       >
         Show more
         <Image
-          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+          src={
+            isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
+          }
           alt="Right arrow"
           className="w-4"
         />
@@ -98,3 +128,5 @@ const Work = ({ isDarkMode }) => {
 };
 
 export default Work;
+
+
