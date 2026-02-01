@@ -109,7 +109,7 @@ export const workData = [
     {
         title: 'SCARA Robot Arm',
         description: 'Embedded Systems & Robotics',
-        bgImage: '/SCARA-Robot-Arm.mp4',
+        bgImage: '/SCARA-Robot-Arm.gif',
         link: '/projects/scara-robot'
     },
     {
@@ -141,6 +141,7 @@ export const infoList = [
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.gazebo, assets.quartus, assets.keil, assets.arduino, assets.ros2, assets.solidworks, assets.vivado
 ];
+
 
 
 
