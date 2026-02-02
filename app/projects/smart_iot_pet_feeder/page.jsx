@@ -41,20 +41,35 @@ export default function Smart_IoT_Pet_Feeder_Page() {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold mb-4"
         >
-           Smart IoT Pet Feeder
+          Smart IoT Pet Feeder
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg text-gray-700 dark:text-gray-300 mb-6"
+          className="text-lg text-gray-700 dark:text-gray-300 mb-3"
         >
-          A modern, 3D-printed automatic pet feeder designed for remote feeding via smartphone. Built using Wi-Fi-enabled microcontrollers and efficient 3D-printed parts, this feeder dispenses food on a customizable schedule or on demand using a mobile app.
+          A modern, 3D-printed automatic pet feeder designed for remote feeding
+          via smartphone. Built using Wi-Fi-enabled microcontrollers and
+          efficient 3D-printed parts, this feeder dispenses food on a
+          customizable schedule or on demand using a mobile app.
+        </motion.p>
+
+        {/* quick "in progress" note */}
+        <motion.p
+          initial={{ opacity: 0, y: -6 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-sm text-gray-600 dark:text-gray-400 mb-8"
+        >
+          <strong>Update:</strong> I am actively updating this project page with
+          improved documentation, refined portion calibration, and additional
+          reliability testing.
         </motion.p>
 
         <div className="space-y-12">
-          {/* Rendered Model */}
+          {/* Main Photo + Feature List */}
           <div className="flex flex-col md:flex-row gap-6 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -64,10 +79,11 @@ export default function Smart_IoT_Pet_Feeder_Page() {
             >
               <img
                 src="/Smart_Bowl.png"
-                alt="Smart Bowl System"
+                alt="Smart IoT Pet Feeder"
                 className="w-full rounded-lg shadow-md object-cover"
               />
             </motion.div>
+
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -75,304 +91,139 @@ export default function Smart_IoT_Pet_Feeder_Page() {
               className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
             >
               <h2 className="text-xl font-semibold mb-2">
-                Smart IoT Pet Feeder in Action
+                Smart IoT Pet Feeder Overview
               </h2>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
                 <li>
-                  Connects over Wi-Fi to a mobile app for on-demand or scheduled feedings.
+                  Wi-Fi connected feeder with app-based <strong>manual dispense</strong>{" "}
+                  and <strong>scheduled feeding</strong>.
                 </li>
                 <li>
-                  Precise portion control using a motor-driven auger/dispenser and calibrated timing.
+                  Motor-driven dispensing mechanism (auger/rotary) with{" "}
+                  <strong>calibrated timing</strong> for repeatable portions.
                 </li>
                 <li>
-                  Live status & logs: view last dispense time, upcoming schedule, and manual override.
+                  Status logging: tracks <strong>last dispense</strong>,{" "}
+                  <strong>upcoming schedule</strong>, and user actions.
                 </li>
                 <li>
-                  Alerts & failsafes for jams, low food, or missed cycles (app notifications).
+                  Reliability and safety considerations:{" "}
+                  <strong>jam detection</strong>, missed-cycle handling, and manual override.
                 </li>
                 <li>
-                  Modular, 3D-printed design for easy cleaning and part replacement.
+                  Modular 3D-printed housing for{" "}
+                  <strong>easy cleaning</strong> and fast iteration on mechanical parts.
                 </li>
-                 <li>
-                  Secure firmware with OTA updates and MQTT/HTTP API hooks for home-automation integration.
-                </li>
-                 <li>
-                  Built as a full stack: embedded firmware, CAD for printed parts, and user-centered app UX.
+                <li>
+                  Cloud/API-ready design: supports lightweight{" "}
+                  <strong>MQTT/HTTP integration hooks</strong> for smart home workflows.
                 </li>
               </ul>
             </motion.div>
           </div>
 
-          {/* Animation */}
-          <div className="flex flex-col md:flex-row gap-6 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="w-full md:w-1/2"
-            >
-              <img
-                src="/SCARA-Robot-Arm.gif"
-                alt="SCARA Robot Animation"
-                className="w-full rounded-lg shadow-md object-cover"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
-            >
-              <h2 className="text-xl font-semibold mb-2">
-                SCARA Robot Performing Pick-and-Place Operation
-              </h2>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                <li>
-                  Demonstrates precise pick-and-place capabilities using inverse
-                  kinematics and PID control.
-                </li>
-                <li>
-                  Executes high-speed, repeatable motion driven by stepper
-                  motors and microcontroller coordination.
-                </li>
-                <li>
-                  Integrates end-effector control to perform object grasping and
-                  placement with accuracy.
-                </li>
-                <li>
-                  Operates on a pre-programmed motion sequence simulating a
-                  production line task.
-                </li>
-                <li>
-                  Highlights the real-world application of control theory,
-                  embedded systems, and motion planning.
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* SolidWorks Snapshot */}
-          <div className="flex flex-col md:flex-row gap-6 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="w-full md:w-1/2"
-            >
-              <img
-                src="/SCARA-Robot-SolidWorks.jpg"
-                alt="SolidWorks Design"
-                className="w-full rounded-lg shadow-md object-cover"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
-            >
-              <h2 className="text-xl font-semibold mb-2">
-                SolidWorks CAD View
-              </h2>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                <li>
-                  CAD model developed in SolidWorks to visualize mechanical
-                  structure and component layout.
-                </li>
-                <li>
-                  Transparent view highlights internal components such as
-                  motors, pulleys, lead screws, and belt systems.
-                </li>
-                <li>
-                  Designed for modularity, 3D printing, and ease of assembly.
-                </li>
-                <li>
-                  Emphasizes mechanical design principles including kinematic
-                  constraints and actuator alignment.
-                </li>
-                <li>
-                  Aids in verifying clearances, tolerances, and mechanical
-                  integrity prior to physical prototyping.
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
-        >
-          <h2 className="text-xl font-semibold mb-2">Tools Used</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-            <li>
-              <strong>Electronics:</strong> Arduino Mega, CNC Shield, A4988
-              stepper drivers, MG996R servo motor, NEMA 17 stepper motors, limit
-              switches, DC power supply (12V/6A)
-            </li>
-            <li>
-              <strong>3D Design Software:</strong> 3DEXPERIENCE SOLIDWORKS,
-              xDesign, 3DMarkup
-            </li>
-            <li>
-              <strong>Programming:</strong> Arduino IDE (C++), Processing IDE
-              (Java-based), ControlP5 library
-            </li>
-            <li>
-              <strong>Hardware:</strong> Bambu Lab X1 Carbon 3D Printer,
-              PLA/PLA+ filament, linear rods, bearings, lead screws, GT2 pulleys
-            </li>
-            <li>
-              <strong>Libraries:</strong> AccelStepper, ControlP5
-            </li>
-          </ul>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
-        >
-          <h2 className="text-xl font-semibold mb-2">Purpose</h2>
-          <p className="text-gray-700 dark:text-gray-300">
-            Design and build a fully functional SCARA robotic arm for
-            educational and experimental purposes, demonstrating core robotics
-            concepts such as kinematics, motion control, and automation.
-          </p>
-        </motion.div>
-
-        {/* Theory Section */}
-        <div className="flex flex-col md:flex-row gap-6 items-center mt-12">
+          {/* Tools Used (corrected to Pet Feeder) */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="w-full md:w-1/2"
+            className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
           >
-            <img
-              src="/Forward-and-Inverse-Kinematics-for-SCARA-Robot-Control.jpg"
-              alt="Forward and Inverse Kinematics"
-              className="w-full rounded-lg shadow-md object-cover"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
-          >
-            <h2 className="text-xl font-semibold mb-2">Theory</h2>
+            <h2 className="text-xl font-semibold mb-2">Tools Used</h2>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
               <li>
-                <strong>Forward Kinematics:</strong> Calculates end-effector
-                position from joint angles.
+                <strong>Embedded / IoT:</strong> Wi-Fi microcontroller (ESP32-class),
+                motor driver, sensors (optional for jam/level), power regulation
               </li>
               <li>
-                <strong>Inverse Kinematics:</strong> Computes joint angles for a
-                specified position.
+                <strong>Firmware:</strong> C/C++ (event/state logic, scheduling, device control),
+                OTA update support (optional)
               </li>
               <li>
-                <strong>Motion Control:</strong> Smooth trajectory execution via
-                AccelStepper.
+                <strong>Networking:</strong> HTTP and/or MQTT messaging, local network control
               </li>
               <li>
-                <strong>GUI Integration:</strong> Live joint and Cartesian input
-                with visual feedback.
+                <strong>Mechanical:</strong> 3D-printed parts (hopper, dispenser housing, mounts),
+                iterative prototyping
+              </li>
+              <li>
+                <strong>CAD / Prototyping:</strong> CAD modeling + 3D printing workflow
               </li>
             </ul>
           </motion.div>
+
+          {/* Purpose (corrected) */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+          >
+            <h2 className="text-xl font-semibold mb-2">Purpose</h2>
+            <p className="text-gray-700 dark:text-gray-300">
+              Design and build a reliable, app-connected feeder that automates daily feeding while
+              emphasizing repeatable portioning, safe operation, and a mechanically serviceable
+              3D-printed design.
+            </p>
+          </motion.div>
+
+          {/* Results (corrected) */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+          >
+            <h2 className="text-xl font-semibold mb-2">Results</h2>
+            <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+              <li>
+                Implemented remote manual dispense and scheduled feeding control over Wi-Fi.
+              </li>
+              <li>
+                Achieved repeatable portions through dispenser timing calibration and mechanical tuning.
+              </li>
+              <li>
+                Added logging and basic fault handling to improve reliability and traceability.
+              </li>
+              <li>
+                Built a modular 3D-printed enclosure that simplifies cleaning and maintenance.
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* Conclusion (new, per your request) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+          >
+            <h2 className="text-xl font-semibold mb-2">Conclusion</h2>
+            <p className="text-gray-700 dark:text-gray-300">
+              This project demonstrates end-to-end hardware–software integration: designing a
+              3D-printed mechanism, building embedded firmware to control a motor-driven dispenser,
+              and enabling reliable scheduling and remote operation over Wi-Fi. It strengthened my
+              skills in embedded control, IoT communication, mechanical iteration, and building systems
+              that behave predictably in real-world use. I’m continuing to refine the design through
+              improved calibration, reliability testing, and expanded fault detection.
+            </p>
+          </motion.div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
-        >
-          <h2 className="text-xl font-semibold mb-2">Results</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-            <li>
-              Demonstrated precise pick-and-place operation using inverse
-              kinematics.
-            </li>
-            <li>Manual and automated modes with real-time GUI controls.</li>
-            <li>Sequence recording and replay functionality implemented.</li>
-            <li>Fully 3D printable modular design using parametric parts.</li>
-          </ul>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
-        >
-          <h2 className="text-xl font-semibold mb-2">Conclusion</h2>
-          <p className="text-gray-700 dark:text-gray-300">
-            This SCARA robotic arm project served as a comprehensive
-            demonstration of robotics engineering principles—bringing together
-            CAD modeling, embedded systems, and control algorithms into a
-            functional prototype. Through hands-on integration of hardware and
-            software, the project strengthened practical skills in mechanical
-            design, kinematic theory, and automation. Future improvements, such
-            as integrating computer vision, will further enhance the robot’s
-            autonomy and expand its application potential in industrial and
-            academic settings.
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
-        >
-          <h2 className="text-xl font-semibold mb-2">Future Work</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-            <li>
-              Integrate computer vision for autonomous object detection and
-              tracking.
-            </li>
-            <li>
-              Experiment with 3D printing and laser engraving as end-effectors.
-            </li>
-            <li>
-              Improve structural rigidity and minimize mechanical backlash.
-            </li>
-          </ul>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
-        >
-          <h2 className="text-xl font-semibold mb-2">Simulation & Modeling</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-            <li>Custom robot models using URDF and Xacro</li>
-            <li>Motion control verified through PID tuning in simulation</li>
-            <li>
-              Physics-based testing in Gazebo for collision and behavior
-              validation
-            </li>
-            <li>Live robot state and path visualization in RViz2</li>
-          </ul>
-        </motion.div>
-
+        {/* OPTIONAL: if you have a repo for the pet feeder, swap this link in */}
+        {/* 
         <motion.a
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          href="https://github.com/Matthew-Garcia/SCARA-Robot"
+          href="https://github.com/<your-username>/<your-pet-feeder-repo>"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-4 px-6 py-3 bg-black text-white rounded hover:bg-gray-800"
+          className="inline-block mt-6 px-6 py-3 bg-black text-white rounded hover:bg-gray-800"
         >
           View on GitHub →
         </motion.a>
+        */}
       </main>
 
       <Footer isDarkMode={isDarkMode} />
