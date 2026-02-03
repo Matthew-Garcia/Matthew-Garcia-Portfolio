@@ -151,7 +151,7 @@ export default function LPC4088EmbeddedFirmwarePage() {
               className="md:col-span-3 flex md:justify-end"
             >
               <img
-                src="/lpc4088-lcd-ui.png"
+                src="/lpc4088-lcd-ui.jpg"
                 alt="LPC4088 LCD Interface"
                 className="w-full max-w-md md:max-w-lg rounded-lg shadow-md object-contain"
               />
