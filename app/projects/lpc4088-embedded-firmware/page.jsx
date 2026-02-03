@@ -54,8 +54,7 @@ export default function LPC4088EmbeddedFirmwarePage() {
         >
           Bare-metal embedded firmware developed for the NXP LPC4088
           microcontroller. This project demonstrates low-level hardware control,
-          deterministic real-time behavior, and multi-peripheral integration
-          without an operating system.
+          deterministic real-time behavior, and multi-peripheral integration.
         </motion.p>
 
         <div className="space-y-12">
