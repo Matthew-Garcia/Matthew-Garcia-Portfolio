@@ -68,7 +68,7 @@ export default function LPC4088EmbeddedFirmwarePage() {
               className="w-full md:w-1/2"
             >
               <img
-                src="/lpc4088-board.png"
+                src="/lpc4088-board.jpg"
                 alt="LPC4088 Development Board"
                 className="w-full rounded-lg shadow-md object-cover"
               />
