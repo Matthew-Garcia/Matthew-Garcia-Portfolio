@@ -37,7 +37,9 @@ const Work = ({ isDarkMode }) => {
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        Welcome to my portfolio. Here you’ll find selected projects in embedded systems and robotics, focused on real-world engineering problems and hands-on system development
+        Welcome to my portfolio. Here you’ll find selected projects in embedded
+        systems and robotics, focused on real-world engineering problems and
+        hands-on system development
       </motion.p>
 
       <motion.div
@@ -70,39 +72,48 @@ const Work = ({ isDarkMode }) => {
             </motion.div>
 
             {project.title === "SCARA Robot Arm" && (
-  <a
-    href="https://matthew-garcia-portfolio.vercel.app/projects/scara-robot"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
-  >
-    View SCARA Robot →
-  </a>
-)}
+              <a
+                href="https://matthew-garcia-portfolio.vercel.app/projects/scara-robot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
+              >
+                View SCARA Robot →
+              </a>
+            )}
 
-{project.title === "Smart IoT Pet Feeder" && (
-  <a
-    href="https://matthew-garcia-portfolio.vercel.app/projects/smart_iot_pet_feeder"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
-  >
-    View Smart IoT Pet Feeder →
-  </a>
-)}
+            {project.title === "Smart IoT Pet Feeder" && (
+              <a
+                href="https://matthew-garcia-portfolio.vercel.app/projects/smart_iot_pet_feeder"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
+              >
+                View Smart IoT Pet Feeder →
+              </a>
+            )}
 
-{project.title === "NASA Lunabotics Autonomous Rover" && (
-  <a
-    href="https://matthew-garcia-portfolio.vercel.app/projects/nasa-lunabotics"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
-  >
-    View NASA Lunabotics →
-  </a>
-)}
+            {project.title === "NASA Lunabotics Autonomous Rover" && (
+              <a
+                href="https://matthew-garcia-portfolio.vercel.app/projects/nasa-lunabotics"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
+              >
+                View NASA Lunabotics →
+              </a>
+            )}
 
-
+            {project.title === "LPC4088 Embedded Firmware" && (
+              <a
+                href="https://matthew-garcia-portfolio.vercel.app/projects/lpc4088-embedded-firmware"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
+              >
+                View LPC4088 Firmware →
+              </a>
+            )}
           </div>
         ))}
       </motion.div>
@@ -128,5 +139,3 @@ const Work = ({ isDarkMode }) => {
 };
 
 export default Work;
-
-
