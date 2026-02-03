@@ -114,7 +114,7 @@ export const workData = [
   {
     title: "LPC4088 Embedded Firmware",
     description: "Bare-Metal, I2C Drivers, ARM Assembly",
-    bgImage: "/lpc4088-board.png",
+    bgImage: "/lpc4088-board.jpg",
     link: "/projects/lpc4088-embedded-firmware",
   },
 
@@ -194,3 +194,4 @@ export const toolsData = [
   assets.solidworks,
   assets.vivado,
 ];
+
