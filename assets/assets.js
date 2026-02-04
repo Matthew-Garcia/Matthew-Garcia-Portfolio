@@ -118,11 +118,11 @@ export const workData = [
     link: "/projects/lpc4088-embedded-firmware",
   },
 
-  {
-    title: "LiDAR-Based Mobile Robot",
-    description: "Autonomous Navigation with ROS2",
-    bgImage: "/work-4.png",
-  },
+ // {
+ //   title: "LiDAR-Based Mobile Robot",
+ //   description: "Autonomous Navigation with ROS2",
+ //   bgImage: "/work-4.png",
+ // },
 ];
 
 export const serviceData = [
@@ -194,5 +194,6 @@ export const toolsData = [
   assets.solidworks,
   assets.vivado,
 ];
+
 
 
