@@ -59,7 +59,7 @@ const Work = ({ isDarkMode }) => {
               className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group w-full"
               style={{ backgroundImage: `url(${project.bgImage})` }}
             >
-              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-1 px-2 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div className="bg-white w-9/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-1 px-2 flex items-center justify-between duration-500 group-hover:bottom-7">
                 <div>
                   <h2 className="font-semibold">{project.title}</h2>
                   <p className="text-sm text-gray-700">{project.description}</p>
@@ -142,5 +142,6 @@ const Work = ({ isDarkMode }) => {
 };
 
 export default Work;
+
 
 
