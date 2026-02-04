@@ -49,71 +49,39 @@ const Work = ({ isDarkMode }) => {
         className="grid grid-cols-auto my-10 gap-5 dark:text-black"
       >
         {workData.map((project, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group w-full"
-              style={{ backgroundImage: `url(${project.bgImage})` }}
+          <div
+            key={index}
+            className="flex flex-col items-center"
+          >
+            <Link
+              href={project.link || "#"}
+              className="w-full"
             >
-              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                <div>
-                  <h2 className="font-semibold">{project.title}</h2>
-                  <p className="text-sm text-gray-700">{project.description}</p>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group w-full"
+                style={{ backgroundImage: `url(${project.bgImage.src})` }}
+              >
+                <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                  <div>
+                    <h2 className="font-semibold">{project.title}</h2>
+                    <p className="text-sm text-gray-700">
+                      {project.description}
+                    </p>
+                  </div>
+                  <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <Image
+                      src={assets.send_icon}
+                      alt="send icon"
+                      className="w-5"
+                    />
+                  </div>
                 </div>
-                <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                  <Image
-                    src={assets.send_icon}
-                    alt="send icon"
-                    className="w-5"
-                  />
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
 
-            {project.title === "SCARA Robot Arm" && (
-              <a
-                href="https://matthew-garcia-portfolio.vercel.app/projects/scara-robot"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
-              >
-                View SCARA Robot →
-              </a>
-            )}
-
-            {project.title === "Smart IoT Pet Feeder" && (
-              <a
-                href="https://matthew-garcia-portfolio.vercel.app/projects/smart_iot_pet_feeder"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
-              >
-                View Smart IoT Pet Feeder →
-              </a>
-            )}
-
-            {project.title === "NASA Lunabotics Autonomous Rover" && (
-              <a
-                href="https://matthew-garcia-portfolio.vercel.app/projects/nasa-lunabotics"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
-              >
-                View NASA Lunabotics →
-              </a>
-            )}
-
-            {project.title === "LPC4088 Embedded Firmware" && (
-              <a
-                href="https://matthew-garcia-portfolio.vercel.app/projects/lpc4088-embedded-firmware"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800 text-sm transition"
-              >
-                View LPC4088 Firmware →
-              </a>
-            )}
+            {/* OPTIONAL: remove these hard-coded buttons once link exists */}
           </div>
         ))}
       </motion.div>
