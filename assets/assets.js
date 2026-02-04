@@ -131,28 +131,28 @@ export const serviceData = [
     title: "Embedded Systems Development",
     description:
       "Designing real-time embedded applications using C/C++, microcontrollers (e.g., Arduino, STM32), and RTOS...",
-    link: "https://github.com/Matthew-Garcia/SCARA-Robot",
+    link: "https://github.com/Matthew-Garcia/lpc4088-embedded-firmware",
   },
   {
     icon: assets.mobile_icon,
     title: "Robotics & Automation",
     description:
       "Building autonomous robotic systems with ROS2, motion planning, PID control, and sensor fusion...",
-    link: "",
+    link: "https://github.com/Matthew-Garcia/SCARA-Robot",
   },
   {
     icon: assets.ui_icon,
     title: "FPGA & Digital Logic Design",
     description:
       "Developing hardware logic (VHDL/Verilog) for ALUs, controllers, and signal processing systems...",
-    link: "",
+    link: "https://github.com/Matthew-Garcia/alu-64bit-vhdl",
   },
   {
     icon: assets.graphics_icon,
     title: "IoT & Edge Computing",
     description:
       "Connecting devices using Wi-Fi/Bluetooth and processing data locally on microcontrollers or SBCs....",
-    link: "",
+    link: "https://github.com/Matthew-Garcia/Smart_IoT_Pet_Feeder",
   },
 ];
 
@@ -194,4 +194,5 @@ export const toolsData = [
   assets.solidworks,
   assets.vivado,
 ];
+
 
