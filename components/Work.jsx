@@ -28,7 +28,7 @@ const Work = ({ isDarkMode }) => {
         transition={{ delay: 0.5, duration: 0.5 }}
         className="text-center text-5xl font-Ovo"
       >
-        My latest work
+        Engineering Projects
       </motion.h2>
 
       <motion.p
@@ -142,6 +142,7 @@ const Work = ({ isDarkMode }) => {
 };
 
 export default Work;
+
 
 
 
