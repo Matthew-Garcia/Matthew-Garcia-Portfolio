@@ -38,8 +38,9 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"} `}>
             <li><a className='font-Ovo' href="/#top">Home</a></li>
             <li><a className='font-Ovo' href="/#about">About me</a></li>
-            <li><a className='font-Ovo' href="/#work">Engineering Projects</a></li>        // Prev -> services
-            <li><a className='font-Ovo' href="/#services">Services</a></li>               // Prev ->  work
+            {/* Swapped order: show Projects before Services (revert by swapping back) */}
+            <li><a className='font-Ovo' href="/#work">Engineering Projects</a></li>
+            <li><a className='font-Ovo' href="/#services">Services</a></li>
             <li><a className='font-Ovo' href="/#contact">Contact me</a></li>
         </ul>
 
@@ -79,5 +80,6 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 }
 
 export default Navbar
+
 
 
